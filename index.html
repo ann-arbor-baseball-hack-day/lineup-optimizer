@@ -11,7 +11,7 @@
 </head>
 
 <body>
-  <form action="javascript:alert( 'success!' );">
+  <form action="javascript:alert('form');">
     <table>
       <tbody>
         <tr>
@@ -21,125 +21,68 @@
           <th>Slugging</th>
         </tr>
         <tr>
-          <td>
-            Player 1: </td>
-          <td><input type="text" name="Player0" value="Lou" style="background-repeat: no-repeat; background-attachment: scroll; background-size: 16px 18px; background-position: 98% 50%;">
-          </td>
-          <td>
-            <input type="text" name="OBA0" value=" 0.400">
-          </td>
-          <td>
-            <input type="text" name="Slug0" value=" 0.400">
-          </td>
+          <td>Player 1: </td>
+          <td><input class="player-name" type="text" name="Player0" value="Lou" style="background-repeat: no-repeat; background-attachment: scroll; background-size: 16px 18px; background-position: 98% 50%;"></td>
+          <td><input class="player-oba" type="text" name="OBA0" value=" 0.400"></td>
+          <td><input type="text" name="Slug0" value=" 0.400"></td>
         </tr>
         <tr>
-          <td>
-            Player 2: </td>
-          <td><input type="text" name="Player1" value="Alan">
-          </td>
-          <td>
-            <input type="text" name="OBA1" value=" 0.450">
-          </td>
-          <td>
-            <input type="text" name="Slug1" value=" 0.500">
+          <td>Player 2: </td>
+          <td><input class="player-name" type="text" name="Player1" value="Alan"></td>
+          <td><input class="player-oba" type="text" name="OBA1" value=" 0.450"></td>
+          <td><input type="text" name="Slug1" value=" 0.500">
           </td>
         </tr>
         <tr>
           <td>Player 3:</td>
-          <td><input type="text" name="Player2" value="Kirk">
-          </td>
-          <td>
-            <input type="text" name="OBA2" value=" 0.250">
-          </td>
-          <td>
-            <input type="text" name="Slug2" value=" 0.600">
-          </td>
+          <td><input class="player-name" type="text" name="Player2" value="Kirk"></td>
+          <td><input class="player-oba" type="text" name="OBA2" value=" 0.250"></td>
+          <td><input type="text" name="Slug2" value=" 0.600"></td>
         </tr>
         <tr>
-          <td>
-            Player 4: </td>
-          <td><input type="text" name="Player3" value="Miggy">
-          </td>
-          <td>
-            <input type="text" name="OBA3" value=" 0.390">
-          </td>
-          <td>
-            <input type="text" name="Slug3" value=" 0.700">
-          </td>
+          <td>Player 4:</td>
+          <td><input class="player-name" type="text" name="Player3" value="Miggy"></td>
+          <td><input class="player-oba" type="text" name="OBA3" value=" 0.390"></td>
+          <td><input type="text" name="Slug3" value=" 0.700"></td>
         </tr>
         <tr>
-          <td>
-            Player 5: </td>
-          <td><input type="text" name="Player4" value="Ty"></td>
-          <td>
-            <input type="text" name="OBA4" value=" 0.400">
-          </td>
-          <td>
-            <input type="text" name="Slug4" value=" 0.650">
-          </td>
+          <td>Player 5: </td>
+          <td><input class="player-name" type="text" name="Player4" value="Ty"></td>
+          <td><input class="player-oba" type="text" name="OBA4" value=" 0.400"></td>
+          <td><input type="text" name="Slug4" value=" 0.650"></td>
         </tr>
         <tr>
-          <td>
-            Player 6: </td>
-          <td><input type="text" name="Player5" value="Nick">
+          <td>Player 6:</td>
+          <td><input class="player-name" type="text" name="Player5" value="Nick"></td>
+          <td><input class="player-oba" type="text" name="OBA5" value=" 0.400">
           </td>
-          <td>
-            <input type="text" name="OBA5" value=" 0.400">
-          </td>
-          <td>
-            <input type="text" name="Slug5" value=" 0.677">
-          </td>
+          <td><input type="text" name="Slug5" value=" 0.677"></td>
         </tr>
         <tr>
-          <td>
-            Player 7: </td>
-          <td><input type="text" name="Player6" value="Jack">
-          </td>
-          <td>
-            <input type="text" name="OBA6" value=" 0.250">
-          </td>
-          <td>
-            <input type="text" name="Slug6" value=" 0.300">
-          </td>
+          <td>Player 7: </td>
+          <td><input class="player-name" type="text" name="Player6" value="Jack"></td>
+          <td><input class="player-oba" type="text" name="OBA6" value=" 0.250"></td>
+          <td><input type="text" name="Slug6" value=" 0.300"></td>
         </tr>
         <tr>
-          <td>
-            Player 8: </td>
-          <td><input type="text" name="Player7" value="Lance">
-          </td>
-          <td>
-            <input type="text" name="OBA7" value=" 0.310">
-          </td>
-          <td>
-            <input type="text" name="Slug7" value=" 0.400">
-          </td>
+          <td>Player 8: </td>
+          <td><input class="player-name" type="text" name="Player7" value="Lance"></td>
+          <td><input class="player-oba" type="text" name="OBA7" value=" 0.310"></td>
+          <td><input type="text" name="Slug7" value=" 0.400"></td>
         </tr>
         <tr>
-          <td>
-            Player 9: </td>
-          <td><input type="text" name="Player8" value="JD">
-          </td>
-          <td>
-            <input type="text" name="OBA8" value=" 0.410">
-          </td>
-          <td>
-            <input type="text" name="Slug8" value=" 0.610">
-          </td>
+          <td>Player 9: </td>
+          <td><input class="player-name" type="text" name="Player8" value="JD"></td>
+          <td><input class="player-oba" type="text" name="OBA8" value=" 0.410"></td>
+          <td><input type="text" name="Slug8" value=" 0.610"></td>
         </tr>
-
         <tr>
           <td></td>
-          <td align="center" colspan="3">
-            <input type="submit" value="Submit">
-          </td>
+          <td align="center" colspan="3"><input type="submit" value="Submit"></td>
         </tr>
       </tbody>
     </table>
   </form>
-
-
-
-
 
 </body>
 
