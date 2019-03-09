@@ -10,3 +10,21 @@ body {
 #main {
   margin-top: 40px;
 }
+
+#lineup-form {
+  font-family: sans-serif;
+}
+
+#lineup-form tr {
+  height: 30px;
+}
+
+#lineup-submit-btn {
+  font-size: 14pt;
+  background-color: orange;
+  color: white;
+  height: 30px;
+  width: 100px;
+  border-radius: 10px;
+  cursor: hand;
+}

@@ -15,13 +15,13 @@
       <image src="images/lineupoptimizer.png" width="300px"/>
   </div>
   <div id="main">
-    <form action="javascript:alert('form');">
+    <form id="lineup-form" action="javascript:alert('form');">
       <table>
         <tbody>
           <tr>
-            <th></th>
+            <th width="80px"></th>
             <th>Player Name</th>
-            <th>OBA</th>
+            <th width="100px">OBA</th>
           </tr>
           <tr>
             <td>Player 1: </td>
@@ -71,7 +71,7 @@
           </tr>
           <tr>
             <td></td>
-            <td align="center" colspan="3"><input type="submit" value="Submit"></td>
+            <td align="right" colspan="3"><input id="lineup-submit-btn" type="submit" value="Submit"></td>
           </tr>
         </tbody>
       </table>
