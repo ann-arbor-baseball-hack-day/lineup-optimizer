@@ -1,6 +1,7 @@
 body {
   width: 1000px;
   margin: auto;
+  font-family: sans-serif;
 }
 
 #header {
@@ -12,14 +13,14 @@ body {
 }
 
 #lineup-form {
-  font-family: sans-serif;
 }
 
-#lineup-form tr {
+table tr {
   height: 30px;
 }
 
 #lineup-submit-btn {
+  float: left;
   font-size: 14pt;
   background-color: orange;
   color: white;
@@ -27,4 +28,26 @@ body {
   width: 100px;
   border-radius: 10px;
   cursor: hand;
+  margin-top: 150px;
+  margin-left: 40px;
+}
+
+#col1 {
+  float: left;
+  width: 500px;
+}
+
+#col2 {
+  float: left;
+  margin-left: 30px;
+  width: 400px;
+}
+
+#lineup-input-tbl {
+  float: left;
+}
+
+#lineup-results-tbl td {
+  text-align: center;
+  width: 110px;
 }

@@ -15,67 +15,102 @@
       <image src="images/lineupoptimizer.png" width="300px"/>
   </div>
   <div id="main">
-    <form id="lineup-form" action="javascript:alert('form');">
-      <table>
-        <tbody>
-          <tr>
-            <th width="80px"></th>
-            <th>Player Name</th>
-            <th width="100px">OBA</th>
-          </tr>
-          <tr>
-            <td>Player 1: </td>
-            <td><input class="player-name" type="text" name="Player0" value="Lou" style="background-repeat: no-repeat; background-attachment: scroll; background-size: 16px 18px; background-position: 98% 50%;"></td>
-            <td><input class="player-oba" type="text" name="OBA0" value=" 0.400"></td>
-          </tr>
-          <tr>
-            <td>Player 2: </td>
-            <td><input class="player-name" type="text" name="Player1" value="Alan"></td>
-            <td><input class="player-oba" type="text" name="OBA1" value=" 0.450"></td>
-            </td>
-          </tr>
-          <tr>
-            <td>Player 3:</td>
-            <td><input class="player-name" type="text" name="Player2" value="Kirk"></td>
-            <td><input class="player-oba" type="text" name="OBA2" value=" 0.250"></td>
-          </tr>
-          <tr>
-            <td>Player 4:</td>
-            <td><input class="player-name" type="text" name="Player3" value="Miggy"></td>
-            <td><input class="player-oba" type="text" name="OBA3" value=" 0.390"></td>
-          </tr>
-          <tr>
-            <td>Player 5: </td>
-            <td><input class="player-name" type="text" name="Player4" value="Ty"></td>
-            <td><input class="player-oba" type="text" name="OBA4" value=" 0.400"></td>
-          </tr>
-          <tr>
-            <td>Player 6:</td>
-            <td><input class="player-name" type="text" name="Player5" value="Nick"></td>
-            <td><input class="player-oba" type="text" name="OBA5" value=" 0.400"></td>
-          </tr>
-          <tr>
-            <td>Player 7: </td>
-            <td><input class="player-name" type="text" name="Player6" value="Jack"></td>
-            <td><input class="player-oba" type="text" name="OBA6" value=" 0.250"></td>
-          </tr>
-          <tr>
-            <td>Player 8: </td>
-            <td><input class="player-name" type="text" name="Player7" value="Lance"></td>
-            <td><input class="player-oba" type="text" name="OBA7" value=" 0.310"></td>
-          </tr>
-          <tr>
-            <td>Player 9: </td>
-            <td><input class="player-name" type="text" name="Player8" value="JD"></td>
-            <td><input class="player-oba" type="text" name="OBA8" value=" 0.410"></td>
-          </tr>
-          <tr>
-            <td></td>
-            <td align="right" colspan="3"><input id="lineup-submit-btn" type="submit" value="Submit"></td>
-          </tr>
-        </tbody>
+    <div id="col1">
+      <form id="lineup-form" action="javascript:alert('form');">
+        <table id="lineup-input-tbl">
+          <tbody>
+            <tr>
+              <th width="80px"></th>
+              <th>Player Name</th>
+              <th width="80px">OBA</th>
+            </tr>
+            <tr>
+              <td>Player 1: </td>
+              <td><input class="player-name" type="text" name="Player0" value="Lou" style="background-repeat: no-repeat; background-attachment: scroll; background-size: 16px 18px; background-position: 98% 50%;"></td>
+              <td><input class="player-oba" type="text" name="OBA0" value=" 0.400"></td>
+            </tr>
+            <tr>
+              <td>Player 2: </td>
+              <td><input class="player-name" type="text" name="Player1" value="Alan"></td>
+              <td><input class="player-oba" type="text" name="OBA1" value=" 0.450"></td>
+              </td>
+            </tr>
+            <tr>
+              <td>Player 3:</td>
+              <td><input class="player-name" type="text" name="Player2" value="Kirk"></td>
+              <td><input class="player-oba" type="text" name="OBA2" value=" 0.250"></td>
+            </tr>
+            <tr>
+              <td>Player 4:</td>
+              <td><input class="player-name" type="text" name="Player3" value="Miggy"></td>
+              <td><input class="player-oba" type="text" name="OBA3" value=" 0.390"></td>
+            </tr>
+            <tr>
+              <td>Player 5: </td>
+              <td><input class="player-name" type="text" name="Player4" value="Ty"></td>
+              <td><input class="player-oba" type="text" name="OBA4" value=" 0.400"></td>
+            </tr>
+            <tr>
+              <td>Player 6:</td>
+              <td><input class="player-name" type="text" name="Player5" value="Nick"></td>
+              <td><input class="player-oba" type="text" name="OBA5" value=" 0.400"></td>
+            </tr>
+            <tr>
+              <td>Player 7: </td>
+              <td><input class="player-name" type="text" name="Player6" value="Jack"></td>
+              <td><input class="player-oba" type="text" name="OBA6" value=" 0.250"></td>
+            </tr>
+            <tr>
+              <td>Player 8: </td>
+              <td><input class="player-name" type="text" name="Player7" value="Lance"></td>
+              <td><input class="player-oba" type="text" name="OBA7" value=" 0.310"></td>
+            </tr>
+            <tr>
+              <td>Player 9: </td>
+              <td><input class="player-name" type="text" name="Player8" value="JD"></td>
+              <td><input class="player-oba" type="text" name="OBA8" value=" 0.410"></td>
+            </tr>
+          </tbody>
+        </table>
+        <input id="lineup-submit-btn" type="submit" value="Optimize">
+      </form>
+    </div>
+    <div id="col2">
+      <table id="lineup-results-tbl">
+        <tr>
+          <th width="80px"></th>
+          <th>Player Name</th>
+          <th width="80px">OBA</th>
+        </tr>
+        <tr>
+          <td>Player 1: </td><td>Lou</td><td>0.400</td>
+        </tr>
+        <tr>
+          <td>Player 2: </td><td>Alan</td><td>0.450</td>
+        </tr>
+        <tr>
+          <td>Player 3: </td><td>Alan</td><td>0.450</td>
+        </tr>
+        <tr>
+          <td>Player 4: </td><td>Alan</td><td>0.450</td>
+        </tr>
+        <tr>
+          <td>Player 5: </td><td>Alan</td><td>0.450</td>
+        </tr>
+        <tr>
+          <td>Player 6: </td><td>Alan</td><td>0.450</td>
+        </tr>
+        <tr>
+          <td>Player 7: </td><td>Alan</td><td>0.450</td>
+        </tr>
+        <tr>
+          <td>Player 8: </td><td>Alan</td><td>0.450</td>
+        </tr>
+        <tr>
+          <td>Player 9: </td><td>Alan</td><td>0.450</td>
+        </tr>
       </table>
-    </form>
+    </div>
   </div>
 </body>
 
